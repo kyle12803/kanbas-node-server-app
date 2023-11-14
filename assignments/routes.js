@@ -7,8 +7,6 @@ function AssignmentRoutes(app) {
 			...db.assignments[assignmentIndex],
 			...req.body,
 		};
-		console.log(JSON.stringify(req.body));
-		console.log(JSON.stringify(db.assignments[assignmentIndex]));
 
 		res.sendStatus(204);
 	});
